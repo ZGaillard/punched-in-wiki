@@ -1,0 +1,193 @@
+/* Punched In design wiki — badges, entry headers and collection filters. */
+
+/* ---- Colour tokens (light palette) ---- */
+:root {
+  --pi-grey: #5f6670;
+  --pi-blue: #1d5fc9;
+  --pi-amber: #9a5b00;
+  --pi-purple: #7b2fa8;
+  --pi-green: #1e7a34;
+  --pi-teal: #00796b;
+  --pi-red: #c62828;
+}
+
+/* ---- Colour tokens (dark palette) ---- */
+[data-md-color-scheme="slate"] {
+  --pi-grey: #b0b6bf;
+  --pi-blue: #7fb0ff;
+  --pi-amber: #ffc04d;
+  --pi-purple: #d39cf5;
+  --pi-green: #6fd88a;
+  --pi-teal: #4fd6c4;
+  --pi-red: #ff8a80;
+}
+
+/* ---- Badges ---- */
+.md-typeset .pi-badge {
+  --pi-badge: var(--pi-grey);
+  display: inline-block;
+  padding: 0 0.5em;
+  border: 1px solid color-mix(in srgb, var(--pi-badge) 55%, transparent);
+  border-radius: 1em;
+  background: color-mix(in srgb, var(--pi-badge) 14%, transparent);
+  color: var(--pi-badge);
+  font-size: 0.85em;
+  font-weight: 700;
+  line-height: 1.6;
+  white-space: nowrap;
+}
+
+.md-typeset .pi-badge--rarity-common { --pi-badge: var(--pi-grey); }
+.md-typeset .pi-badge--rarity-rare { --pi-badge: var(--pi-blue); }
+.md-typeset .pi-badge--rarity-legendary { --pi-badge: var(--pi-amber); }
+.md-typeset .pi-badge--rarity-cursed { --pi-badge: var(--pi-purple); }
+
+.md-typeset .pi-badge--status-idea {
+  --pi-badge: var(--pi-grey);
+  background: transparent;
+}
+.md-typeset .pi-badge--status-approved { --pi-badge: var(--pi-green); }
+.md-typeset .pi-badge--status-implemented { --pi-badge: var(--pi-teal); }
+.md-typeset .pi-badge--status-cut {
+  --pi-badge: var(--pi-red);
+  text-decoration: line-through;
+}
+
+.md-typeset .pi-badge--decision-proposed {
+  --pi-badge: var(--pi-amber);
+  background: transparent;
+}
+.md-typeset .pi-badge--decision-accepted { --pi-badge: var(--pi-green); }
+.md-typeset .pi-badge--decision-superseded { --pi-badge: var(--pi-grey); }
+
+/* ---- Entry page header ---- */
+.md-typeset .pi-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.2rem;
+  margin: -0.6rem 0 1.2rem;
+  font-size: 0.75rem;
+}
+
+.md-typeset .pi-meta__label {
+  color: var(--md-default-fg-color--light);
+}
+
+.md-typeset .pi-attached {
+  font-size: 0.75rem;
+}
+
+/* ---- Generated tables ---- */
+.md-typeset tr[data-status="cut"] td:first-child a,
+.md-typeset .pi-superseded del {
+  text-decoration: line-through;
+}
+
+.md-typeset tr[data-status="cut"] td,
+.md-typeset .pi-superseded td {
+  color: var(--md-default-fg-color--light);
+}
+
+/* ---- Filters ---- */
+.md-typeset .pi-filters {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin: 1em 0;
+  padding: 0.8rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.2rem;
+  font-size: 0.7rem;
+}
+
+.md-typeset .pi-filters__search {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.4rem 0.6rem;
+  border: 1px solid var(--md-default-fg-color--lighter);
+  border-radius: 0.2rem;
+  background: var(--md-default-bg-color);
+  color: var(--md-default-fg-color);
+  font: inherit;
+  font-size: 0.8rem;
+}
+
+.md-typeset .pi-filters__search:focus {
+  outline: 2px solid var(--md-accent-fg-color);
+  outline-offset: -1px;
+}
+
+.md-typeset .pi-filters__group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.md-typeset .pi-filters__legend {
+  float: left; /* lets the legend sit inline with the chips */
+  margin-right: 0.2rem;
+  padding: 0;
+  font-weight: 700;
+}
+
+.md-typeset .pi-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.15rem 0.6rem 0.15rem 0.4rem;
+  border: 1px solid var(--md-default-fg-color--lighter);
+  border-radius: 1rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.md-typeset .pi-chip:has(input:checked) {
+  border-color: var(--md-accent-fg-color);
+  background: color-mix(in srgb, var(--md-accent-fg-color) 15%, transparent);
+}
+
+.md-typeset .pi-chip input {
+  margin: 0;
+  accent-color: var(--md-accent-fg-color);
+}
+
+.md-typeset .pi-chip__count {
+  color: var(--md-default-fg-color--light);
+}
+
+.md-typeset .pi-filters__footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.6rem;
+}
+
+.md-typeset .pi-filters__count {
+  font-weight: 700;
+}
+
+.md-typeset .md-button.pi-filters__reset {
+  padding: 0.2rem 0.8rem;
+  font-size: 0.7rem;
+}
+
+.md-typeset .pi-filters__empty {
+  color: var(--md-default-fg-color--light);
+  font-style: italic;
+}
+
+/* Material shows an icon in the nav for pages with a `status` field. Our
+   statuses are design states, not Material page statuses, so hide it. */
+.md-nav .md-status {
+  display: none;
+}
+
+.md-typeset .pi-collection [hidden] {
+  display: none;
+}

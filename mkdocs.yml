@@ -1,0 +1,130 @@
+site_name: Punched In — Design Wiki
+site_description: Design wiki and lexicon for Punched In, a backgammon roguelike.
+
+# TODO: set both URLs to your GitHub Pages address and repository.
+site_url: https://<user>.github.io/<repo>/
+repo_url: https://github.com/<user>/<repo>
+edit_uri: ""  # no "Edit this page" button
+
+theme:
+  name: material
+  language: en
+  icon:
+    logo: material/silverware-fork-knife
+  palette:
+    # Follows the system preference until the reader picks one.
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep orange
+      accent: deep orange
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep orange
+      accent: deep orange
+      toggle:
+        icon: material/brightness-4
+        name: Follow system preference
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - toc.follow
+
+plugins:
+  - search
+  - tags
+
+hooks:
+  - hooks/collections.py
+
+extra_css:
+  - assets/stylesheets/extra.css
+extra_javascript:
+  - assets/javascripts/filters.js
+
+extra:
+  # Allowed values for the `type` field of menu items. This is the only place
+  # where item types are defined. Item types are not decided yet, hence `TBD`.
+  # To add a type, add a line such as `- Some type` below, then use exactly
+  # that text in the menu item's frontmatter (`type: Some type`).
+  item_types:
+    - TBD
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - admonition
+  - def_list
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+# Collection entries are reached through the generated indexes and search,
+# so they are deliberately left out of `nav`.
+not_in_nav: |
+  /menu-items/*.md
+  /consumables/*.md
+  /relics/*.md
+  /keywords/*.md
+  /biomes/*.md
+  /characters/*.md
+  /playtests/*.md
+  /decisions/*.md
+
+validation:
+  omitted_files: info
+  absolute_links: warn
+  unrecognized_links: warn
+  anchors: warn
+
+nav:
+  - Home: index.md
+  - Rules:
+      - Core rules: rules/core-rules.md
+      - Run structure: rules/run-structure.md
+      - Drafting & curses: rules/drafting-and-curses.md
+      - Glossary: rules/glossary.md
+      - Keywords: keywords/index.md
+  - Biomes:
+      - biomes/index.md
+      - biomes/shark.md
+      - biomes/fox.md
+      - biomes/old-raccoon.md
+      - biomes/sloth.md
+      - biomes/snake.md
+      - Final boss: final-boss.md
+  - Content:
+      - Menu items: menu-items/index.md
+      - Consumables: consumables/index.md
+      - Relics: relics/index.md
+      - Characters: characters/index.md
+  - Systems:
+      - Shops: shops.md
+      - Meta progression: meta-progression.md
+  - Project:
+      - Decisions: decisions/index.md
+      - Open questions: decisions/open-questions.md
+      - Playtests: playtests/index.md
+      - Parking lot: parking-lot.md
+      - Roadmap: roadmap.md
+      - Tags: tags.md
