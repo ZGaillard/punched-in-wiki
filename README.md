@@ -17,9 +17,11 @@ A small hook, `hooks/collections.py`, does the bookkeeping:
 - builds the index of every collection (menu items, relics, playtests…) from
   the files in its folder;
 - checks every entry's frontmatter and warns about mistakes;
-- tags each entry with its rarity, type and status;
+- tags each entry with its rarity, type, category and status;
 - adds a metadata line (rarity, type, status, author…) under each entry's title;
-- lists the 10 most recently changed entries on the home page.
+- lists the 10 most recently changed entries on the home page;
+- shows each biome's boss and minions on its card, linked to their character
+  pages.
 
 So adding content never requires editing anything but the new file.
 
@@ -150,17 +152,31 @@ alphabetically. The five main biome pages are also in the navigation sidebar
 (`nav` in `mkdocs.yml`); a new biome page only needs adding there if it should
 appear in the sidebar too.
 
+Every biome page follows the same layout (overview and biome rule, boss,
+minions 1–3, game notes, design notes); `docs/biomes/shark.md` is the
+reference example. Also add a character page for the boss and each minion,
+with `biome:` set to the biome's slug: the biome's card on the Biomes page
+then links the boss and lists the minions automatically, in the order the
+biome page links to them. The card also shows the biome's `summary`.
+
 ### Characters
 
 Template `_templates/character.md` → `docs/characters/<slug>.md`.
-Required: `name`, `status`.
+Required: `name`, `category`, `status`. The index groups characters by
+category (Player, Bosses, Minions, Shopkeepers, NPCs), then by biome.
 
 ```yaml
 ---
 name: Example character
+category: minion       # player, boss, minion, shopkeeper or npc
 status: idea
+biome: example-biome   # optional
 ---
 ```
+
+`biome` is the filename (without `.md`) of the character's biome page; it
+must exist. Keep the "Starting menu", "Starting relic/consumables" and
+"Unlock" sections for player characters only.
 
 ### Playtest notes
 
@@ -198,8 +214,8 @@ a link to their replacement.
 
 ### Other pages
 
-Rules, shops, meta progression, open questions, parking lot and roadmap are
-ordinary Markdown pages: edit them directly. A new standalone page must be
+Rules, triggers, shops & breaks, meta progression, open questions, parking
+lot and roadmap are ordinary Markdown pages: edit them directly. A new standalone page must be
 added to `nav` in `mkdocs.yml`.
 
 ## 4. Frontmatter reference
@@ -233,9 +249,16 @@ catches typos.
 | `rarity` | enum | no       | `common`, `rare`, `legendary` |
 | `shop`   | enum | no       | Consumables: `dish-pit`. Relics: `bar`. Defaults to that value. |
 
-### Keywords, characters
+### Keywords
 
 Shared fields only.
+
+### Characters
+
+| Field      | Type | Required | Values / notes |
+|------------|------|----------|----------------|
+| `category` | enum | yes      | `player`, `boss`, `minion`, `shopkeeper`, `npc` |
+| `biome`    | str  | no       | Slug of an existing biome page |
 
 ### Biomes
 
@@ -290,7 +313,7 @@ Decisions use their own statuses: `proposed` (under discussion), `accepted`
 (in force), `superseded` (replaced by a later decision, see `superseded_by`).
 
 Every entry is also tagged automatically `status:<value>` (plus
-`rarity:<value>` and `type:<value>` where they apply), so the Tags page lists,
+`rarity:<value>`, `type:<value>` and `category:<value>` where they apply), so the Tags page lists,
 for example, every `status:approved` entry.
 
 ## 7. Validation

@@ -2,7 +2,8 @@
 id: "0003"
 name: Dish pit after every game, bar after each close
 date: 2026-10-21
-status: accepted
+status: superseded
+superseded_by: "0004"
 tags: [run-structure]
 summary: After a service, the dish pit; after a close, the dish pit then the bar.
 ---

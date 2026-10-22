@@ -4,7 +4,7 @@ boss: The Boss             # boss name, e.g. The Shark
 status: idea               # idea | approved | implemented | cut
 # author: Your name          # optional: who wrote the entry
 # tags: [tag-one, tag-two]   # optional: free tags, listed on the Tags page
-# summary: One line shown in the index table   # optional
+# summary: One line shown on the biome's card   # optional
 ---
 
 <!--
@@ -15,18 +15,29 @@ status: idea               # idea | approved | implemented | cut
   Optional fields are commented out in the frontmatter above: remove the
   leading "# " to use one.
   No H1 needed: the title is `name`, or "<boss> biome" while name is TBD.
-  Nothing else needs editing: the entry appears in the index, the Tags page,
-  "Recently added" and search on the next build.
+  Also add a character page for the boss (category: boss) and each minion
+  (category: minion), with `biome:` set to this file's name; the biome's card
+  then lists them automatically.
+  See docs/biomes/shark.md for a filled-in example.
 -->
 
 One paragraph: what this biome is.
 
 ## Overview
 
+- **Animals:** TBD
+- **Role:** TBD (which restaurant staff)
+- **Keyword:** TBD
+
+### Biome rule: Rule name
+
 !!! note "TBD"
-    Theme and identity of this biome.
+    The rule that applies in every game of this biome, with its strength by
+    day.
 
 ## Boss: *The Boss*
+
+Character page: [The Boss](../characters/the-boss.md).
 
 ### Description
 
@@ -36,24 +47,21 @@ One paragraph: what this biome is.
 ### Special orders
 
 !!! note "TBD"
-    The boss's checkers with special abilities.
+    The boss's special orders and abilities, with a table of how many he has
+    each day.
 
 ### Placement rule
 
-!!! note "TBD"
-    Fixed placement or constrained random distribution of the boss's checkers.
+Standard backgammon starting setup, unless an ability says otherwise.
 
 ### Behaviour / AI notes
 
 !!! note "TBD"
     How the boss plays its moves.
 
-## Minion 1
+## Minion 1: Name
 
-### Name
-
-!!! note "TBD"
-    Name of this minion.
+Character page: [Name](../characters/name.md).
 
 ### Description
 
@@ -63,83 +71,38 @@ One paragraph: what this biome is.
 ### Special orders
 
 !!! note "TBD"
-    The 5 checkers this minion controls in a service, and their special abilities.
+    How many of its 5 orders are special each day, and their abilities.
 
 ### Placement rule
 
-!!! note "TBD"
-    Fixed placement or constrained random distribution of this minion's checkers.
+Standard backgammon starting setup.
 
 ### Behaviour / AI notes
 
-!!! note "TBD"
-    How this minion plays its moves.
+Shares the minions' single AI (see [Game notes](#game-notes)).
 
-## Minion 2
+## Minion 2: Name
 
-### Name
+Same sections as Minion 1.
 
-!!! note "TBD"
-    Name of this minion.
+## Minion 3: Name
 
-### Description
-
-!!! note "TBD"
-    Who this minion is and how it plays.
-
-### Special orders
-
-!!! note "TBD"
-    The 5 checkers this minion controls in a service, and their special abilities.
-
-### Placement rule
-
-!!! note "TBD"
-    Fixed placement or constrained random distribution of this minion's checkers.
-
-### Behaviour / AI notes
-
-!!! note "TBD"
-    How this minion plays its moves.
-
-## Minion 3
-
-### Name
-
-!!! note "TBD"
-    Name of this minion.
-
-### Description
-
-!!! note "TBD"
-    Who this minion is and how it plays.
-
-### Special orders
-
-!!! note "TBD"
-    The 5 checkers this minion controls in a service, and their special abilities.
-
-### Placement rule
-
-!!! note "TBD"
-    Fixed placement or constrained random distribution of this minion's checkers.
-
-### Behaviour / AI notes
-
-!!! note "TBD"
-    How this minion plays its moves.
+Same sections as Minion 1.
 
 ## Game notes
 
+!!! note "TBD"
+    A table of special orders per minion and per game (service 1, service 2
+    with the boss's orders, close).
+
 ### Service 1
 
-!!! note "TBD"
-    Notes on this biome's first service.
+The three minions only; no boss orders.
 
 ### Service 2
 
 !!! note "TBD"
-    Notes on this biome's second service.
+    Which boss special orders sneak in (1 / 2 / 3 by day).
 
 ### Boss game
 
@@ -149,4 +112,4 @@ One paragraph: what this biome is.
 ## Design notes
 
 !!! note "TBD"
-    Open design notes for this biome.
+    Ideas on ice, rejected ideas.

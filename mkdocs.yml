@@ -37,6 +37,7 @@ theme:
     - navigation.sections
     - navigation.indexes
     - navigation.top
+    - navigation.footer
     - search.suggest
     - search.highlight
     - content.code.copy
@@ -71,7 +72,11 @@ markdown_extensions:
   - toc:
       permalink: true
   - pymdownx.details
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.emoji:
@@ -104,21 +109,22 @@ nav:
       - Drafting & curses: rules/drafting-and-curses.md
       - Glossary: rules/glossary.md
       - Keywords: keywords/index.md
-  - Biomes:
-      - biomes/index.md
-      - biomes/shark.md
-      - biomes/fox.md
-      - biomes/old-raccoon.md
-      - biomes/sloth.md
-      - biomes/snake.md
+      - Triggers: rules/triggers.md
+  - World:
+      - Biomes: biomes/index.md
+      - The Shark: biomes/shark.md
+      - The Fox: biomes/fox.md
+      - The Old Raccoon: biomes/old-raccoon.md
+      - The Sloth: biomes/sloth.md
+      - The Snake: biomes/snake.md
       - Final boss: final-boss.md
+      - Characters: characters/index.md
   - Content:
       - Menu items: menu-items/index.md
       - Consumables: consumables/index.md
       - Relics: relics/index.md
-      - Characters: characters/index.md
   - Systems:
-      - Shops: shops.md
+      - Shops & breaks: shops.md
       - Meta progression: meta-progression.md
   - Project:
       - Decisions: decisions/index.md

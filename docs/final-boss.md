@@ -1,8 +1,10 @@
 # Final boss: The Pig
 
 **The Pig**, the owner, is the final boss of every run: the player faces it
-after the third day. This page documents the final boss the same way the
-biome pages document their bosses.
+after the third day, at full HP thanks to the last
+[staff meal](characters/the-saint-bernard.md). This page documents the final
+boss the same way the biome pages document their bosses. Character page:
+[The Pig](characters/the-pig.md).
 
 !!! info "Parking lot"
     A doubling-cube variant used only in the final boss game is in the

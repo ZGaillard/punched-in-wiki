@@ -6,7 +6,7 @@ Responsibilities:
   schemas below (problems are logged as warnings, so `--strict` fails);
 * replace `<!-- collection: NAME -->` markers with the generated index of that
   collection, and `<!-- recently-added -->` with the latest changed entries;
-* add automatic `rarity:`, `type:` and `status:` tags to entries;
+* add automatic `rarity:`, `type:`, `category:` and `status:` tags to entries;
 * insert a metadata header under the H1 of every entry page.
 
 Nothing is ever written back to the source files.
@@ -40,6 +40,11 @@ DECISION_STATUSES = ("proposed", "accepted", "superseded")
 RARITIES = ("common", "rare", "legendary", "cursed")
 RARITIES_NOT_CURSED = ("common", "rare", "legendary")
 
+# Character categories, in the order the characters index lists them.
+CHARACTER_CATEGORIES = ("player", "boss", "minion", "shopkeeper", "npc")
+CATEGORY_HEADINGS = {"player": "Player", "boss": "Bosses", "minion": "Minions",
+                     "shopkeeper": "Shopkeepers", "npc": "NPCs"}
+
 # Biomes are listed in this order; biomes not in the list come after, A–Z.
 BIOME_ORDER = ("shark", "fox", "old-raccoon", "sloth", "snake")
 
@@ -51,7 +56,7 @@ MATERIAL_KEYS = {"title", "description", "hide", "icon", "search", "template"}
 
 # Index pages that Material's `navigation.indexes` may use as the landing page
 # of their nav section. See `on_nav`.
-SECTION_LANDING_PAGES = {"biomes/index.md"}
+SECTION_LANDING_PAGES: set[str] = set()
 
 
 @dataclass(frozen=True)
@@ -118,7 +123,14 @@ COLLECTIONS = {
             "biomes", "Biome", "biome.md",
             {**SHARED, "boss": Field("str", required=True)},
         ),
-        Collection("characters", "Character", "character.md", dict(SHARED)),
+        Collection(
+            "characters", "Character", "character.md",
+            {
+                **SHARED,
+                "category": Field("enum", required=True, choices=CHARACTER_CATEGORIES),
+                "biome": Field("str"),
+            },
+        ),
         Collection(
             "playtests", "Playtest", "playtest-note.md",
             {
@@ -346,6 +358,13 @@ def _validate_links() -> None:
         else:
             target.attached_to.append(entry)
 
+    biomes = {e.slug for e in _entries["biomes"]}
+    for entry in _entries["characters"]:
+        biome = entry.get("biome")
+        if biome and biome not in biomes:
+            _warn(entry.file.src_uri, f"biome '{biome}' does not match any biome "
+                                      "(expected the filename, without .md, of a biome page)")
+
     decisions: dict[str, Entry] = {}
     for entry in _entries["decisions"]:
         decision_id = entry.get("id")
@@ -503,6 +522,10 @@ def _sorted(c: Collection) -> list[Entry]:
         return sorted(entries, key=lambda e: (_order(RARITIES, e.get("rarity")), by_title(e)))
     if c.key == "biomes":
         return sorted(entries, key=lambda e: (_order(BIOME_ORDER, e.slug), by_title(e)))
+    if c.key == "characters":
+        # Characters without a biome (the Pig, shopkeepers…) come after the biomes.
+        return sorted(entries, key=lambda e: (_order(BIOME_ORDER, e.get("biome")),
+                                              not e.get("biome"), by_title(e)))
     if c.key == "playtests":
         return sorted(entries, key=lambda e: (e.date() or dt.date.min, e.slug), reverse=True)
     if c.key == "decisions":
@@ -519,7 +542,10 @@ def _render_collection(c: Collection, page: Page) -> str:
     if c.key in ("menu-items", "consumables", "relics"):
         return _render_filterable(c, entries, page)
 
-    if c.key in ("keywords", "characters"):
+    if c.key == "characters":
+        return _render_characters(entries, page)
+
+    if c.key == "keywords":
         lines = []
         for e in entries:
             summary = f" — {e.get('summary')}" if e.get("summary") else ""
@@ -529,10 +555,25 @@ def _render_collection(c: Collection, page: Page) -> str:
     if c.key == "biomes":
         cards = []
         for e in entries:
+            boss = _boss_character(e)
+            boss_html = _link(boss, page) if boss else _esc(e.get("boss") or TBD)
+            # Minions in the order the biome page presents them (Minion 1, 2, 3).
+            source = e.file.content_string
+            minions = sorted(
+                (m for m in _entries["characters"]
+                 if m.get("biome") == e.slug and m.get("category") == "minion"),
+                # A minion the page never links to sorts last (find() returns -1).
+                key=lambda m: (source.find(f"characters/{m.slug}.md") % (len(source) + 1),
+                               m.title.casefold()),
+            )
+            minions_html = ", ".join(_link(m, page) for m in minions) or TBD
+            summary = f"    {_esc(e.get('summary'))}\n\n" if e.get("summary") else ""
             cards.append(
                 f"-   :material-map-outline:{{ .lg .middle }} **{_md_link(e, page)}**\n\n"
                 f"    ---\n\n"
-                f"    Boss: {_esc(e.get('boss') or TBD)}\n\n"
+                f"{summary}"
+                f"    Boss: {boss_html}<br>\n"
+                f"    Minions: {minions_html}\n\n"
                 f"    {_status_badge(e)}\n"
             )
         return '<div class="grid cards" markdown>\n\n' + "\n".join(cards) + "\n</div>"
@@ -561,6 +602,30 @@ def _render_collection(c: Collection, page: Page) -> str:
                 status += " by " + _link(replacement, page, replacement.get("id"))
         rows.append((attrs, [_esc(e.get("id")), _esc(e.date() or e.meta.get("date", "")), title, status]))
     return _table(["Id", "Date", "Title", "Status"], rows)
+
+
+def _boss_character(biome: Entry) -> Entry | None:
+    """The boss character page of a biome, if there is one."""
+    return next((e for e in _entries["characters"]
+                 if e.get("biome") == biome.slug and e.get("category") == "boss"), None)
+
+
+def _render_characters(entries: list[Entry], page: Page) -> str:
+    biomes = {e.slug: e for e in _entries["biomes"]}
+    sections = []
+    for category in CHARACTER_CATEGORIES:
+        group = [e for e in entries if e.get("category") == category]
+        sections.append(f"## {CATEGORY_HEADINGS[category]}\n")
+        if not group:
+            sections.append("*None yet.*\n")
+            continue
+        rows = []
+        for e in group:
+            biome = biomes.get(e.get("biome"))
+            rows.append(({}, [_link(e, page), _link(biome, page) if biome else "—",
+                              _status_badge(e), _esc(e.get("summary"))]))
+        sections.append(_table(["Name", "Biome", "Status", "Summary"], rows) + "\n")
+    return "\n".join(sections)
 
 
 def _render_filterable(c: Collection, entries: list[Entry], page: Page) -> str:
@@ -616,7 +681,7 @@ def _render_recent(page: Page) -> str:
 def _tags(entry: Entry) -> list[str]:
     tags = entry.meta.get("tags")
     tags = [t for t in tags if isinstance(t, str)] if isinstance(tags, list) else []
-    for key in ("rarity", "type", "status"):
+    for key in ("rarity", "type", "category", "status"):
         if key in entry.collection.fields and entry.get(key):
             tags.append(f"{key}:{entry.get(key)}")
     return list(dict.fromkeys(tags))
@@ -640,12 +705,18 @@ def _header(entry: Entry, page: Page) -> str:
         add("Rarity", _badge("rarity", entry.get("rarity")))
     if "type" in c.fields:
         add("Type", _esc(entry.get("type")))
+    if "category" in c.fields:
+        add("Category", _esc("NPC" if entry.get("category") == "npc" else _label(entry.get("category"))))
+    if c.key == "characters" and entry.get("biome"):
+        target = next((e for e in _entries["biomes"] if e.slug == entry.get("biome")), None)
+        add("Biome", _link(target, page) if target else _esc(entry.get("biome")))
     if "status" in c.fields:
         add("Status", _status_badge(entry))
     if "shop" in c.fields:
         add("Shop", _esc(_label(entry.get("shop"))))
     if "boss" in c.fields:
-        add("Boss", _esc(entry.get("boss")))
+        boss = _boss_character(entry)
+        add("Boss", _link(boss, page) if boss else _esc(entry.get("boss")))
     if "date" in c.fields:
         add("Date", _esc(entry.date() or meta.get("date", "")))
     add("Players", join("players"))
