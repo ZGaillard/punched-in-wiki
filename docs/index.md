@@ -19,7 +19,7 @@ bar to find any term.
 
     ---
 
-    Board, checkers, damage, refired checkers, bearing off, win and loss.
+    The pass, orders, damage, refires and the pillar, serving, win and loss.
 
 -   :material-map-marker-path:{ .lg .middle } **[Run structure](rules/run-structure.md)**
 
@@ -37,7 +37,7 @@ bar to find any term.
 
     ---
 
-    The game's vocabulary: orders, plates, bills, menu, tips…
+    The game's vocabulary: orders, pillar, refire, serve, plates, tips…
 
 -   :material-format-list-bulleted-type:{ .lg .middle } **[Keywords](keywords/index.md)**
 

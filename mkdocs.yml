@@ -1,9 +1,8 @@
 site_name: Punched In — Design Wiki
 site_description: Design wiki and lexicon for Punched In, a backgammon roguelike.
 
-# TODO: set both URLs to your GitHub Pages address and repository.
-site_url: https://<user>.github.io/<repo>/
-repo_url: https://github.com/<user>/<repo>
+site_url: https://zgaillard.github.io/punched-in-wiki/
+repo_url: https://github.com/ZGaillard/punched-in-wiki
 edit_uri: ""  # no "Edit this page" button
 
 theme:

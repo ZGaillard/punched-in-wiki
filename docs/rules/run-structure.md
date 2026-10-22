@@ -37,12 +37,15 @@ A run has 10 games in total.
 
 - **Drafting:** between games, the player is offered 3 menu items and may add
   one. See [Drafting & curses](drafting-and-curses.md).
-- **Dish pit:** the consumables shop, visited between games.
-- **Bar:** the relics shop ("shift beer"), visited between days.
+- **Dish pit:** the consumables shop, visited after **every** game.
+- **Bar:** the relics shop ("shift beer"), visited after each **close**, right
+  after the dish pit.
 - **Smoke break:** the pause menu, available at any time.
 
-See [Shops](../shops.md) for details.
+So after a service the player goes to the dish pit, then the next game; after
+a close, to the dish pit, then the bar, then the next day. See
+[Shops](../shops.md) for details and
+[decision 0003](../decisions/0003-shop-order.md).
 
 !!! note "TBD"
-    The exact order of drafting and shops between two games, and between two
-    days.
+    Where drafting fits in that sequence.

@@ -321,13 +321,14 @@ pushing to be sure.
 the Actions tab): it installs the requirements, runs `mkdocs build --strict`
 and publishes the `site/` folder to GitHub Pages.
 
-One-time setup:
+The site is published at <https://zgaillard.github.io/punched-in-wiki/>, from
+the public repository
+[ZGaillard/punched-in-wiki](https://github.com/ZGaillard/punched-in-wiki).
+Pages is set to **Settings → Pages → Build and deployment → Source: GitHub
+Actions**. To publish a change, push to `main`; the Actions tab shows the
+build and any warning that stopped it.
 
-1. In `mkdocs.yml`, set `site_url` (e.g. `https://<user>.github.io/<repo>/`)
-   and `repo_url` to the real values.
-2. On GitHub: repository **Settings → Pages → Build and deployment → Source:
-   GitHub Actions**.
-3. Push to `main`.
+If the repository moves, update `site_url` and `repo_url` in `mkdocs.yml`.
 
 Notes:
 

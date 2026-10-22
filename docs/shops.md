@@ -8,21 +8,40 @@ happens during a [run](rules/run-structure.md).
 
 - The **consumables** shop.
 - Consumables are single-use.
-- Visited **between games**.
+- Visited after **every game**.
+- Offers **3 different consumables**.
+- The player has **3 pockets**: at most 3 consumables held at once.
 - Browse every consumable in [Consumables](consumables/index.md).
 
+| Rarity    | Price (tips) |
+|-----------|--------------|
+| Common    | 4            |
+| Rare      | 6            |
+| Legendary | 9            |
+
 !!! note "TBD"
-    Prices, how many consumables are offered, and how the offer is chosen.
+    How the offer is chosen (random among all consumables in the current
+    build).
 
 ## Bar
 
 - The **relics** shop ("shift beer").
 - Relics are game-changing items.
-- Visited **between days**.
+- Visited after each **close** (the end of a day), right after the dish pit.
+- Offers **3 different relics**.
+- Relics are kept for the rest of the run. No limit on how many, but one of
+  each.
 - Browse every relic in [Relics](relics/index.md).
 
+| Rarity    | Price (tips) |
+|-----------|--------------|
+| Common    | 8            |
+| Rare      | 12           |
+| Legendary | 16           |
+
 !!! note "TBD"
-    Prices, how many relics are offered, and how the offer is chosen.
+    How the offer is chosen (random among the relics not owned yet in the
+    current build).
 
 ## Smoke break
 
@@ -37,5 +56,11 @@ can:
 
 Tips are the in-run currency, spent in the in-run shops.
 
+- The player starts a run with **10 tips**.
+- Each plate the player serves leaves **1 tip**, win or lose, paid at the end
+  of the game.
+
+See [decision 0002](decisions/0002-tips-and-prices.md).
+
 !!! note "TBD"
-    How tips are earned.
+    Other sources of tips (bonuses for winning, items…).
