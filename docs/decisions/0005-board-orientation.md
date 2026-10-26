@@ -42,6 +42,8 @@ The plate shelf is drawn in the left window of the pass art.
   board, outer board, point numbers counted from the mover's side (24 down
   to 1), and "in front of" / "behind", so that a mirrored board can be added
   later.
+- Built in the Godot build (26 October 2026): the side choice is gone; the
+  player is White and plays clockwise. Biome tints are not built yet.
 - An option to switch the direction is in the
   [parking lot](../parking-lot.md#board-direction).
 - Each biome needs a colour palette. The player's colour must stay out of
