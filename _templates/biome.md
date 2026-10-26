@@ -1,7 +1,7 @@
 ---
 name: TBD                  # biome name, or TBD
 boss: The Boss             # boss name, e.g. The Shark
-status: idea               # idea | approved | implemented | cut
+status: idea               # idea | approved | implemented | shelved | cut
 # author: Your name          # optional: who wrote the entry
 # tags: [tag-one, tag-two]   # optional: free tags, listed on the Tags page
 # summary: One line shown on the biome's card   # optional

@@ -229,7 +229,7 @@ catches typos.
 | Field     | Type      | Required | Values / notes |
 |-----------|-----------|----------|----------------|
 | `name`    | str       | yes      | Display name |
-| `status`  | enum      | yes      | `idea`, `approved`, `implemented`, `cut` (not used by playtests) |
+| `status`  | enum      | yes      | `idea`, `approved`, `implemented`, `shelved`, `cut` (not used by playtests) |
 | `author`  | str       | no       | Who wrote the entry |
 | `tags`    | list[str] | no       | Free tags, listed on the Tags page |
 | `summary` | str       | no       | One line shown in index tables |
@@ -307,6 +307,7 @@ every item still using it produce a warning.
 | `idea`        | Proposed, not decided. Open for discussion. |
 | `approved`    | Decided: part of the design, not yet in the game. |
 | `implemented` | In the Godot build. |
+| `shelved`     | Set aside for now; may come back later. Shown dimmed. |
 | `cut`         | Removed from the design. Kept for history; shown struck through. |
 
 Decisions use their own statuses: `proposed` (under discussion), `accepted`

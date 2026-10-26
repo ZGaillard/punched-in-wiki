@@ -1,6 +1,6 @@
 ---
 name: Bad oyster
-status: idea
+status: shelved
 rarity: common
 tags: [debuff, block-actions]
 summary: The enemy's refired orders can't enter next turn.
@@ -23,3 +23,4 @@ TBD
 ## Changelog
 
 - 2026-10-22: first draft.
+- 2026-10-26: shelved; left out of the first set.

@@ -1,6 +1,6 @@
 ---
 name: Painkiller
-status: idea
+status: shelved
 rarity: common
 tags: [buff, pillar]
 summary: Your next refired order re-enters for free.
@@ -23,3 +23,4 @@ TBD
 ## Changelog
 
 - 2026-10-22: first draft.
+- 2026-10-26: shelved; left out of the first set.

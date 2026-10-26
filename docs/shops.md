@@ -18,7 +18,8 @@ one happens, see [Order of a run](rules/run-structure.md#order-of-a-run).
 - Visited after each **service**, right after the menu item choice. Not after
   a close.
 - Offers **3 different consumables**.
-- The player has **3 pockets**: at most 3 consumables held at once.
+- **Pockets have no limit**: the player can hold any number of consumables,
+  copies of the same one included. Each card on offer sells once.
 - Browse every consumable in [Consumables](consumables/index.md).
 
 | Rarity    | Price (tips) |

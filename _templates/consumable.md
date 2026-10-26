@@ -1,6 +1,6 @@
 ---
 name: Consumable name
-status: idea               # idea | approved | implemented | cut
+status: idea               # idea | approved | implemented | shelved | cut
 # rarity: common           # optional: common | rare | legendary
 # shop: dish-pit         # optional: always dish-pit (the default)
 # author: Your name          # optional: who wrote the entry

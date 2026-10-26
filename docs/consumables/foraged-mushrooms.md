@@ -1,6 +1,6 @@
 ---
 name: Foraged mushrooms
-status: idea
+status: implemented
 rarity: rare
 tags: [buff, see-future-rolls]
 summary: See your next 3 rolls.
@@ -23,3 +23,4 @@ TBD
 ## Changelog
 
 - 2026-10-22: first draft.
+- 2026-10-26: implemented in the Godot build (rules: decision D34 in the game repo).

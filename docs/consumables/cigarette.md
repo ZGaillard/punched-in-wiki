@@ -1,6 +1,6 @@
 ---
 name: Cigarette
-status: idea
+status: implemented
 rarity: rare
 tags: [buff, extra-pips]
 summary: 2 extra pips, on one order or split over two.
@@ -23,3 +23,4 @@ Rare: 6 tips at the [dish pit](../shops.md#dish-pit).
 ## Changelog
 
 - 2026-10-22: first draft.
+- 2026-10-26: implemented in the Godot build (rules: decision D34 in the game repo).

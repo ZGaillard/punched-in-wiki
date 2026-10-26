@@ -1,6 +1,6 @@
 ---
 name: Keyword
-status: idea               # idea | approved | implemented | cut
+status: idea               # idea | approved | implemented | shelved | cut
 # author: Your name          # optional: who wrote the entry
 # tags: [tag-one, tag-two]   # optional: free tags, listed on the Tags page
 # summary: One line shown in the index table   # optional

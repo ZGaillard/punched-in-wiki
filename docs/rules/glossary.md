@@ -93,7 +93,7 @@ Dish pit
     See [Shops & breaks](../shops.md#dish-pit).
 
 Pockets
-:   The player's consumable slots: 3.
+:   Where the player keeps their consumables. No limit, copies allowed.
 
 Bar
 :   The relics shop ("shift beer"), run by The Octopus, visited before the run

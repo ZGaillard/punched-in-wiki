@@ -1,6 +1,6 @@
 ---
 name: Vape
-status: idea
+status: implemented
 rarity: rare
 tags: [buff, extra-pips]
 summary: Move one order 1 pip forward or backward.
@@ -25,3 +25,4 @@ Rare: 6 tips at the [dish pit](../shops.md#dish-pit).
 ## Changelog
 
 - 2026-10-22: first draft.
+- 2026-10-26: implemented in the Godot build (rules: decision D34 in the game repo).

@@ -97,3 +97,11 @@ See [Consumables](../consumables/index.md).
 ### What is the meta currency?
 
 See [Meta progression](../meta-progression.md).
+
+## Stacking copies of a consumable
+
+With no pocket limit, the same consumable can be used twice in one turn. Today:
+two Chill pills both hit the enemy's next roll (the second does nothing more);
+a second Foraged mushrooms or Poppers in the same turn adds nothing. Should
+copies stack, chain onto later rolls, or be refused once one is waiting? See
+[decision 0006](0006-no-pocket-limit.md).

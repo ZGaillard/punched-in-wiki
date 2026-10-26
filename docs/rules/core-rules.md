@@ -13,6 +13,10 @@ run, see [Run structure](run-structure.md).
 - The player's whole collection of checkers is their **menu**: always exactly
   **15 orders**. See [Drafting & curses](drafting-and-curses.md).
 - The enemy also always has **15 orders**.
+- **Direction:** the player sits at the bottom of the pass and moves
+  clockwise, with their home board at the bottom left; the enemy plays the
+  mirror image. The player's orders have a fixed colour, and enemy orders
+  are tinted by biome. See [decision 0005](../decisions/0005-board-orientation.md).
 - **Placement:** almost every game uses the standard backgammon starting
   setup. Exceptions are listed on each [biome page](../biomes/index.md) (e.g.
   The Shark's *Table stealer*).

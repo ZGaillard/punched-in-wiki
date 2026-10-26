@@ -1,6 +1,6 @@
 ---
 name: Cheap wine
-status: idea
+status: shelved
 rarity: common
 tags: [debuff, block-doubles]
 summary: The enemy's next doubles play as a normal roll.
@@ -23,3 +23,4 @@ TBD
 ## Changelog
 
 - 2026-10-22: first draft.
+- 2026-10-26: shelved; left out of the first set.

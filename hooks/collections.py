@@ -35,7 +35,7 @@ log = logging.getLogger("mkdocs.plugins.punched_in")
 # --------------------------------------------------------------------------
 
 TBD = "TBD"
-STATUSES = ("idea", "approved", "implemented", "cut")
+STATUSES = ("idea", "approved", "implemented", "shelved", "cut")
 DECISION_STATUSES = ("proposed", "accepted", "superseded")
 RARITIES = ("common", "rare", "legendary", "cursed")
 RARITIES_NOT_CURSED = ("common", "rare", "legendary")

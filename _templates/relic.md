@@ -1,6 +1,6 @@
 ---
 name: Relic name
-status: idea               # idea | approved | implemented | cut
+status: idea               # idea | approved | implemented | shelved | cut
 # rarity: common           # optional: common | rare | legendary
 # shop: bar              # optional: always bar (the default)
 # author: Your name          # optional: who wrote the entry

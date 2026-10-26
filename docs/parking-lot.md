@@ -21,3 +21,10 @@ playstyles TBD.
 - **Birds & flying animals:** eagle (maybe the boss), parrot, sparrow,
   woodpecker, bat, falcon. The [Pelican](characters/pelican.md) stays in the
   Shark biome.
+
+## Switching the board direction { #board-direction }
+
+An option to play anticlockwise (home board at the bottom right) instead of
+the default clockwise (see [decision 0005](decisions/0005-board-orientation.md)):
+a setting, or a choice at the start of the game. The Godot build can already
+mirror the board, and the art could be mirrored too.

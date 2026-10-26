@@ -48,6 +48,11 @@
 }
 .md-typeset .pi-badge--status-approved { --pi-badge: var(--pi-green); }
 .md-typeset .pi-badge--status-implemented { --pi-badge: var(--pi-teal); }
+.md-typeset .pi-badge--status-shelved {
+  --pi-badge: var(--pi-grey);
+  background: transparent;
+  border-style: dashed;
+}
 .md-typeset .pi-badge--status-cut {
   --pi-badge: var(--pi-red);
   text-decoration: line-through;
@@ -83,6 +88,7 @@
   text-decoration: line-through;
 }
 
+.md-typeset tr[data-status="shelved"] td,
 .md-typeset tr[data-status="cut"] td,
 .md-typeset .pi-superseded td {
   color: var(--md-default-fg-color--light);

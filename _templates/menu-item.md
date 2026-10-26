@@ -2,7 +2,7 @@
 name: Item name
 rarity: common             # common | rare | legendary | cursed
 type: TBD                  # one of extra.item_types in mkdocs.yml
-status: idea               # idea | approved | implemented | cut
+status: idea               # idea | approved | implemented | shelved | cut
 # cursed_with: cursed-item-slug   # optional: filename (without .md) of the cursed menu item that comes attached
 # author: Your name          # optional: who wrote the entry
 # tags: [tag-one, tag-two]   # optional: free tags, listed on the Tags page

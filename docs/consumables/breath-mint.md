@@ -1,6 +1,6 @@
 ---
 name: Breath mint
-status: idea
+status: shelved
 rarity: common
 tags: [debuff, disrupt-roll]
 summary: The enemy rerolls one die of your choice.
@@ -23,3 +23,4 @@ TBD
 ## Changelog
 
 - 2026-10-22: first draft.
+- 2026-10-26: shelved; left out of the first set.

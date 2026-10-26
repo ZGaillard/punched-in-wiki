@@ -1,6 +1,6 @@
 ---
 name: Eye drops
-status: idea
+status: shelved
 rarity: common
 tags: [debuff, block-doubles]
 summary: The enemy's next double is rerolled.
@@ -23,3 +23,4 @@ Common: 4 tips at the [dish pit](../shops.md#dish-pit).
 ## Changelog
 
 - 2026-10-22: first draft.
+- 2026-10-26: shelved; left out of the first set.

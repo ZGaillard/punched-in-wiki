@@ -10,7 +10,7 @@ Every entry is tagged with its side (`buff` or `debuff`) and its family (e.g.
 **Rule:** dice changed by a consumable that end up matching count as doubles.
 
 The goal is more commons than rares, and more rares than legendaries (currently
-10 common, 9 rare, 7 legendary).
+5 common, 7 rare, 7 legendary in play, plus 8 shelved).
 
 To add an entry, copy `_templates/consumable.md` into `docs/consumables/` and fill in its
 frontmatter; it appears below automatically.

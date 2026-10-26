@@ -1,6 +1,6 @@
 ---
 name: Small baggie
-status: idea
+status: implemented
 rarity: legendary
 tags: [buff, extra-dice]
 summary: A third die for one turn.
@@ -23,3 +23,4 @@ TBD
 ## Changelog
 
 - 2026-10-22: first draft.
+- 2026-10-26: implemented in the Godot build (rules: decision D34 in the game repo).

@@ -1,7 +1,7 @@
 ---
 name: Character name
 category: minion           # player | boss | minion | shopkeeper | npc
-status: idea               # idea | approved | implemented | cut
+status: idea               # idea | approved | implemented | shelved | cut
 # biome: shark             # optional: filename (without .md) of the character's biome
 # author: Your name          # optional: who wrote the entry
 # tags: [tag-one, tag-two]   # optional: free tags, listed on the Tags page

@@ -1,6 +1,6 @@
 ---
 name: Horse tranq
-status: idea
+status: shelved
 rarity: rare
 tags: [debuff, subtract-from-dice]
 summary: −2 to one die.
@@ -25,3 +25,4 @@ Rare: 6 tips at the [dish pit](../shops.md#dish-pit).
 ## Changelog
 
 - 2026-10-22: first draft.
+- 2026-10-26: shelved; left out of the first set.
