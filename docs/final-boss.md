@@ -16,7 +16,7 @@ boss the same way the biome pages document their bosses. Character page:
 !!! note "TBD"
     Who The Pig is and how the final boss game plays.
 
-## Special orders
+## Special checkers
 
 !!! note "TBD"
     The Pig's checkers with special abilities.

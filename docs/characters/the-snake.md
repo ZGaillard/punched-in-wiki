@@ -16,4 +16,4 @@ TBD: which debuffs (see [open questions](../decisions/open-questions.md)). [Glas
 
 ## Design notes
 
-His biome is "the bar", but **Bar** is also the relics shop.
+His biome is the drinks bar (not to be confused with the board's bar).

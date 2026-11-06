@@ -31,13 +31,13 @@ Character page: [The Old Raccoon](../characters/the-old-raccoon.md).
 
 The head chef: old, done for, tired of everything. The player also plays as a raccoon.
 
-### Special orders
+### Special checkers
 
 !!! note "TBD"
     The playstyle is on hold until it's discussed with a coworker. Options so
     far:
 
-    - **The rush:** cooks race to get plates out; fast serving is the threat.
+    - **The rush:** cooks race to get plates out; fast bearing off is the threat.
     - **The veteran:** knows upcoming rolls but plays lazily.
 
 ### Placement rule
@@ -54,7 +54,7 @@ Standard backgammon starting setup, unless an ability says otherwise.
 Character page: [Rat](../characters/rat.md).
 
 !!! note "TBD"
-    Description, special orders (count by day and abilities), placement and
+    Description, special checkers (count by day and abilities), placement and
     behaviour.
 
 ## Minion 2: Pigeon
@@ -62,7 +62,7 @@ Character page: [Rat](../characters/rat.md).
 Character page: [Pigeon](../characters/pigeon.md).
 
 !!! note "TBD"
-    Description, special orders (count by day and abilities), placement and
+    Description, special checkers (count by day and abilities), placement and
     behaviour.
 
 ## Minion 3: Squirrel
@@ -70,13 +70,13 @@ Character page: [Pigeon](../characters/pigeon.md).
 Character page: [Squirrel](../characters/squirrel.md).
 
 !!! note "TBD"
-    Description, special orders (count by day and abilities), placement and
+    Description, special checkers (count by day and abilities), placement and
     behaviour.
 
 ## Game notes
 
 !!! note "TBD"
-    Special orders per game, and notes on service 1, service 2 and the close.
+    Special checkers per game, and notes on regular game 1, regular game 2 and the boss game.
     The general rules are in
     [How a biome works](index.md#how-a-biome-works).
 

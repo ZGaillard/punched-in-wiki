@@ -12,10 +12,10 @@ The classic aggressive server who steals tables. Plays aggressively (fits the Bl
 
 ## Abilities
 
-- **Blood in the water:** a free extra 1-pip move every time he refires one of your orders.
-- **Feeding frenzy orders:** cost you 2 HP when served.
-- **Shark bite orders:** an order they refire loses its menu effect for the rest of the game.
-- **Table stealer** (close only): steals your rarest order on the first turn.
+- **Blood in the water:** a free extra 1-pip move every time he hits one of your checkers.
+- **Feeding frenzy checkers:** cost you 2 HP when borne off.
+- **Shark bite checkers:** a checker they hit loses its menu effect for the rest of the game.
+- **Table stealer** (boss game only): steals your rarest checker on the first turn.
 
 Full rules on the [biome page](../biomes/shark.md#boss-the-shark).
 

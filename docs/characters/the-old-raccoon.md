@@ -14,7 +14,7 @@ The head chef: old, done for, tired of everything. The player also plays as a ra
 
 TBD. Playstyle on hold; options so far:
 
-- *The rush:* cooks race to get plates out; fast serving is the threat.
+- *The rush:* cooks race to get plates out; fast bearing off is the threat.
 - *The veteran:* knows upcoming rolls but plays lazily.
 
 ## Design notes

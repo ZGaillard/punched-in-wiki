@@ -3,7 +3,7 @@ name: Beaver
 category: minion
 status: idea
 biome: sloth
-summary: "Builds walls and pushes your orders back."
+summary: "Builds walls and pushes your checkers back."
 ---
 
 ## Description

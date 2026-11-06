@@ -3,18 +3,18 @@ name: Cigarette
 status: implemented
 rarity: rare
 tags: [buff, extra-pips]
-summary: 2 extra pips, on one order or split over two.
+summary: 2 extra pips, on one checker or split over two.
 ---
 
 ## Effect
 
-An extra move on top of your roll: 2 pips in total, on one order or split over two.
+An extra move on top of your roll: 2 pips in total, on one checker or split over two.
 
 Buff: used on your own turn. Family: **Extra pips**.
 
 ## Cost & availability
 
-Rare: 6 tips at the [dish pit](../shops.md#dish-pit).
+Rare: 6 coins at the [consumable shop](../shops.md#consumable-shop).
 
 ## Design notes
 

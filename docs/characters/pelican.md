@@ -3,7 +3,7 @@ name: Pelican
 category: minion
 status: idea
 biome: shark
-summary: "Freezes the orders it refires."
+summary: "Freezes the checkers it hits."
 ---
 
 ## Description
@@ -12,7 +12,7 @@ TBD
 
 ## Abilities
 
-- **Numbness:** an order it refires is frozen in its pouch for 1 turn before going to the pillar.
+- **Numbness:** a checker it hits is frozen in its pouch for 1 turn before going to the bar.
 
 Full rules on the [biome page](../biomes/shark.md#minion-3-pelican).
 

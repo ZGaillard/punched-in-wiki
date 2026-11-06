@@ -2,19 +2,19 @@
 name: Painkiller
 status: shelved
 rarity: common
-tags: [buff, pillar]
-summary: Your next refired order re-enters for free.
+tags: [buff, bar]
+summary: Your next hit checker re-enters for free.
 ---
 
 ## Effect
 
-The next time one of your orders is refired this game, at the start of your next turn it enters on the first open point of the enemy's home board without using a die; you still play your full roll. If every entry point is blocked, it waits on the pillar as normal.
+The next time one of your checkers is hit this game, at the start of your next turn it enters on the first open point of the enemy's home board without using a die; you still play your full roll. If every entry point is blocked, it waits on the bar as normal.
 
-Buff: used on your own turn. Family: **Pillar**.
+Buff: used on your own turn. Family: **Bar**.
 
 ## Cost & availability
 
-Common: 4 tips at the [dish pit](../shops.md#dish-pit).
+Common: 4 coins at the [consumable shop](../shops.md#consumable-shop).
 
 ## Design notes
 

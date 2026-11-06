@@ -7,7 +7,7 @@ answered, record it as a [decision](index.md) and remove it from this list.
 
 ### Exact damage values and HP { #damage-and-hp }
 
-A draft exists (15 HP per day, 1 HP per served enemy order, restored by the
+A draft exists (15 HP per day, 1 HP per borne off enemy checker, restored by the
 staff meal). It still needs playtesting. See
 [Core rules](../rules/core-rules.md#damage-hp).
 
@@ -23,11 +23,11 @@ See [Drafting & curses](../rules/drafting-and-curses.md).
 
 ### Money system
 
-The tips economy ([decision 0002](0002-tips-and-prices.md)) is not final.
-Among other things: is the starting relic, bought at the bar before the run,
-free or paid with the starting 10 tips?
+The coins economy ([decision 0002](0002-tips-and-prices.md)) is not final.
+Among other things: is the starting relic, bought at the relic shop before the run,
+free or paid with the starting 10 coins?
 
-See [Shops & breaks](../shops.md#tips) and
+See [Shops & breaks](../shops.md#coins) and
 [Order of a run](../rules/run-structure.md#order-of-a-run).
 
 ### Choosing the biomes of a run
@@ -42,16 +42,16 @@ How are the 3 biomes of a run chosen among the 5? See
 Every biome is still named after its boss. See
 [Biomes](../biomes/index.md).
 
-### Boss special orders on days 1 and 2
+### Boss special checkers on days 1 and 2
 
-How many special orders a boss has on days 1 and 2 is set per biome for now
+How many special checkers a boss has on days 1 and 2 is set per biome for now
 (see [The Shark](../biomes/shark.md) and [The Sloth](../biomes/sloth.md)); no
 general rule yet.
 
 ### The Snake
 
-- Which debuffs does he serve? Do his minions debuff too?
-- His biome is "the bar", but the **bar** is also the relics shop.
+- Which debuffs does he bear off? Do his minions debuff too?
+- His biome is "the relic shop", but the **bar** is also the relics shop.
 
 See [The Snake](../biomes/snake.md).
 
@@ -62,8 +62,8 @@ Playstyle: *the rush* or *the veteran*? See
 
 ### The Fox
 
-- Does she take ownership of your orders, or swap positions on the board?
-- Whose effect does a swapped order carry, given the 15-order menu?
+- Does she take ownership of your checkers, or swap positions on the board?
+- Whose effect does a swapped checker carry, given the 15-checker menu?
 
 See [The Fox](../biomes/fox.md).
 
@@ -86,7 +86,7 @@ See [Menu items](../menu-items/index.md).
 ### Consumables
 
 - Eye drops needs a real name.
-- Should dice be capped at 0? Below 0, orders move backward, which can
+- Should dice be capped at 0? Below 0, checkers move backward, which can
   sometimes help the enemy. Either way, the AI move generator must support
   backward moves (Vape, Cuban cigar).
 

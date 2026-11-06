@@ -14,7 +14,7 @@ Debuff: used against the enemy. Family: **Take away an enemy die**.
 
 ## Cost & availability
 
-Legendary: 9 tips at the [dish pit](../shops.md#dish-pit).
+Legendary: 9 coins at the [consumable shop](../shops.md#consumable-shop).
 
 ## Design notes
 

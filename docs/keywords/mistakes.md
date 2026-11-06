@@ -10,7 +10,7 @@ The enemy's clumsy errors leave obstacles that cause you problems during the gam
 
 ## Used by
 
-- [The Sloth](../biomes/sloth.md): *Butterfingers* and *Spill* orders drop dirty plates that block your orders.
+- [The Sloth](../biomes/sloth.md): *Butterfingers* and *Spill* checkers drop dirty plates that block your checkers.
 
 ## Notes
 

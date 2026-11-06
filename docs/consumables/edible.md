@@ -14,7 +14,7 @@ Debuff: used against the enemy. Family: **Take away an enemy die**.
 
 ## Cost & availability
 
-Rare: 6 tips at the [dish pit](../shops.md#dish-pit).
+Rare: 6 coins at the [consumable shop](../shops.md#consumable-shop).
 
 ## Design notes
 

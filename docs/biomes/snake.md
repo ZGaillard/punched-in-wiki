@@ -2,7 +2,7 @@
 name: TBD
 boss: The Snake
 status: approved
-summary: "Reptiles, the bar staff. The barman debuffs you with alcohol."
+summary: "Reptiles, the drinks bar staff. The barman debuffs you with alcohol."
 ---
 
 The biome tied to **The Snake**. This page collects everything about the biome: its identity, its boss, its three minions and notes on each of its games. The biome's name is not decided yet, so the page is titled after its boss.
@@ -15,7 +15,7 @@ The biome tied to **The Snake**. This page collects everything about the biome: 
 ## Overview
 
 - **Animals:** reptiles.
-- **Role:** they work at the bar.
+- **Role:** they work at the drinks bar.
 - **Keyword:** [debuff](../keywords/debuff.md), a negative effect applied to
   you.
 
@@ -32,7 +32,7 @@ Character page: [The Snake](../characters/the-snake.md).
 
 The barman. Debuffs you by serving you alcohol during the shift.
 
-### Special orders
+### Special checkers
 
 !!! note "TBD"
     Which debuffs, and whether the minions debuff too. The
@@ -53,7 +53,7 @@ Standard backgammon starting setup, unless an ability says otherwise.
 Character page: [Frog](../characters/frog.md).
 
 !!! note "TBD"
-    Description, special orders (count by day and abilities), placement and
+    Description, special checkers (count by day and abilities), placement and
     behaviour.
 
 ## Minion 2: Chameleon
@@ -61,7 +61,7 @@ Character page: [Frog](../characters/frog.md).
 Character page: [Chameleon](../characters/chameleon.md).
 
 !!! note "TBD"
-    Description, special orders (count by day and abilities), placement and
+    Description, special checkers (count by day and abilities), placement and
     behaviour.
 
 ## Minion 3: Turtle
@@ -69,17 +69,15 @@ Character page: [Chameleon](../characters/chameleon.md).
 Character page: [Turtle](../characters/turtle.md).
 
 !!! note "TBD"
-    Description, special orders (count by day and abilities), placement and
+    Description, special checkers (count by day and abilities), placement and
     behaviour.
 
 ## Game notes
 
 !!! note "TBD"
-    Special orders per game, and notes on service 1, service 2 and the close.
+    Special checkers per game, and notes on regular game 1, regular game 2 and the boss game.
     The general rules are in
     [How a biome works](index.md#how-a-biome-works).
 
 ## Design notes
 
-- **Naming conflict:** this biome is "the bar", but the **bar** is also the
-  relics shop, run by [The Octopus](../characters/the-octopus.md).

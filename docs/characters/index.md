@@ -6,8 +6,8 @@ Everyone in the game, grouped by category:
   consumables. The basic starting character starts with a menu of 15 Burgers.
 - **Bosses:** the five biome bosses and the final boss, The Pig.
 - **Minions:** the three minions of each biome.
-- **Shopkeepers:** the staff running the [dish pit](../shops.md#dish-pit) and
-  the [bar](../shops.md#bar).
+- **Shopkeepers:** the staff running the [consumable shop](../shops.md#consumable-shop) and
+  the [bar](../shops.md#relic-shop).
 - **NPCs:** anyone else the player meets.
 
 Boss and minion pages give a short summary; the full rules are on their

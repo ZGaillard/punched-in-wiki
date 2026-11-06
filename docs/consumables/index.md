@@ -1,6 +1,6 @@
 # Consumables
 
-Every consumable: single-use items sold at the [dish pit](../shops.md#dish-pit). Use the filters to narrow the list; the filtered view can be shared by copying the page's URL.
+Every consumable: single-use items sold at the [consumable shop](../shops.md#consumable-shop). Use the filters to narrow the list; the filtered view can be shared by copying the page's URL.
 
 Each consumable is a drug or substance, hinted at but never named. They come
 in two sides: **buffs** improve your own turn, **debuffs** hurt the enemy's.

@@ -3,7 +3,7 @@ name: Chameleon
 category: minion
 status: idea
 biome: snake
-summary: "Works at the bar. Details TBD."
+summary: "Works at the drinks bar. Details TBD."
 ---
 
 ## Description

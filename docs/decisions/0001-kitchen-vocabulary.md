@@ -2,7 +2,8 @@
 id: "0001"
 name: Kitchen vocabulary for the board
 date: 2026-10-20
-status: accepted
+status: superseded
+superseded_by: "0007"
 tags: [vocabulary]
 summary: Order, point, pillar, refire, serve and plate replace the backgammon terms.
 ---

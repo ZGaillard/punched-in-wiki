@@ -14,7 +14,7 @@ Debuff: used against the enemy. Family: **Disrupt the enemy roll**.
 
 ## Cost & availability
 
-Common: 4 tips at the [dish pit](../shops.md#dish-pit).
+Common: 4 coins at the [consumable shop](../shops.md#consumable-shop).
 
 ## Design notes
 

@@ -8,7 +8,7 @@ summary: Cooks the staff meal, which heals the player to full HP.
 ## Description
 
 The rescue dog with the little barrel on its collar. He cooks the **staff
-meal** (the "family meal"), the meal the crew eats together before service.
+meal** (the "family meal"), the meal the crew eats together before the day's games.
 He finds the player when they're wrecked and feeds them back on their feet.
 
 ## Abilities
@@ -17,6 +17,6 @@ He finds the player when they're wrecked and feeds them back on their feet.
 
 ## Design notes
 
-- The staff meal comes at the end of each day, after the bar (see
+- The staff meal comes at the end of each day, after the relic shop (see
   [Order of a run](../rules/run-structure.md#order-of-a-run)). It is the
   daily HP reset: the player starts every day, and the final boss, at full HP.

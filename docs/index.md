@@ -11,22 +11,23 @@ characters, items and the decisions behind them.
 
 ## The game in 30 seconds
 
-- You are a raccoon cook. Every game is a game of **classic backgammon**; your
-  checkers are **orders** and bearing off is **serving**.
+- You are a raccoon cook. Every game is a game of **classic backgammon**, with
+  its usual words (checkers, hit, the bar, bear off); the checkers are drawn
+  as kitchen bills.
 - A **run** lasts three days (Thursday, Friday, Saturday). Each day you face
-  one **biome**: two **services** against its three minions, then the
-  **close** against its boss. Then comes the final boss, **The Pig**, the
+  one **biome**: two **regular games** against its three minions, then the
+  **boss game** against its boss. Then comes the final boss, **The Pig**, the
   owner.
-- You have **15 HP per day**; every enemy order that gets served hurts.
-- Between games you improve your **menu** (your 15 orders), buy
-  **consumables** at the dish pit and **relics** at the bar, and eat the
+- You have **15 HP per day**; every enemy checker that gets borne off hurts.
+- Between games you improve your **menu** (your 15 checkers), buy
+  **consumables** at the consumable shop and **relics** at the relic shop, and eat the
   **staff meal** at the end of each day.
 
-!!! tip "New here?"
+!!! coin "New here?"
     Read [Core rules](rules/core-rules.md), then
     [Run structure](rules/run-structure.md), then a finished biome such as
     [The Shark](biomes/shark.md). The [Glossary](rules/glossary.md) explains
-    every kitchen word. Anything marked `idea` is a proposal, not a decision.
+    every word the game uses. Anything marked `idea` is a proposal, not a decision.
 
 ## Rules
 
@@ -36,14 +37,14 @@ characters, items and the decisions behind them.
 
     ---
 
-    The pass, orders, enemies, HP, refires and the pillar, serving, win and
+    The board, checkers, enemies, HP, hits and the bar, bearing off, win and
     loss.
 
 -   :material-map-marker-path:{ .lg .middle } **[Run structure](rules/run-structure.md)**
 
     ---
 
-    The order of a run: days, services, closes and every stop in between.
+    The order of a run: days, regular games, boss games and every stop in between.
 
 -   :material-cards-playing-outline:{ .lg .middle } **[Drafting & curses](rules/drafting-and-curses.md)**
 
@@ -55,7 +56,7 @@ characters, items and the decisions behind them.
 
     ---
 
-    The game's vocabulary: orders, pillar, refire, serve, plates, tips…
+    The game's vocabulary: checkers, bar, hit, bear off, plates, coins…
 
 -   :material-format-list-bulleted-type:{ .lg .middle } **[Keywords](keywords/index.md)**
 
@@ -109,13 +110,13 @@ characters, items and the decisions behind them.
 
     ---
 
-    Single-use items sold at the dish pit, filterable.
+    Single-use items sold at the consumable shop, filterable.
 
 -   :material-glass-mug-variant:{ .lg .middle } **[Relics](relics/index.md)**
 
     ---
 
-    Game-changing items sold at the bar, filterable.
+    Game-changing items sold at the relic shop, filterable.
 
 </div>
 
@@ -127,7 +128,7 @@ characters, items and the decisions behind them.
 
     ---
 
-    The dish pit, the bar, the staff meal, the smoke break and tips.
+    The consumable shop, the relic shop, the staff meal, the pause and coins.
 
 -   :material-stove:{ .lg .middle } **[Meta progression](meta-progression.md)**
 

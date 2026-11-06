@@ -3,18 +3,18 @@ name: Vape
 status: implemented
 rarity: rare
 tags: [buff, extra-pips]
-summary: Move one order 1 pip forward or backward.
+summary: Move one checker 1 pip forward or backward.
 ---
 
 ## Effect
 
-An extra move on top of your roll: move one order 1 pip, forward or backward.
+An extra move on top of your roll: move one checker 1 pip, forward or backward.
 
 Buff: used on your own turn. Family: **Extra pips**.
 
 ## Cost & availability
 
-Rare: 6 tips at the [dish pit](../shops.md#dish-pit).
+Rare: 6 coins at the [consumable shop](../shops.md#consumable-shop).
 
 ## Design notes
 

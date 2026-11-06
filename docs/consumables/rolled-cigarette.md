@@ -3,18 +3,18 @@ name: Rolled cigarette
 status: implemented
 rarity: common
 tags: [buff, extra-pips]
-summary: Move one order 1 pip.
+summary: Move one checker 1 pip.
 ---
 
 ## Effect
 
-An extra move on top of your roll: move one order 1 pip.
+An extra move on top of your roll: move one checker 1 pip.
 
 Buff: used on your own turn. Family: **Extra pips**.
 
 ## Cost & availability
 
-Common: 4 tips at the [dish pit](../shops.md#dish-pit).
+Common: 4 coins at the [consumable shop](../shops.md#consumable-shop).
 
 ## Design notes
 

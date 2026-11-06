@@ -1,53 +1,57 @@
 # Glossary
 
-The vocabulary of Punched In. These words are used everywhere in the wiki and
-in the game instead of the usual backgammon terms (see
-[decision 0001](../decisions/0001-kitchen-vocabulary.md)). Words used in item
-and enemy texts are defined in [Keywords](../keywords/index.md) and
-[Triggers](triggers.md).
+The vocabulary of Punched In: the classic backgammon words, and plain words for
+the run (see [decision 0007](../decisions/0007-classic-vocabulary.md), which
+replaced the kitchen words of [decision 0001](../decisions/0001-kitchen-vocabulary.md)).
+The kitchen stays in the look: checkers are drawn as bills, borne-off checkers
+as plates. Words used in item and enemy texts are defined in
+[Keywords](../keywords/index.md) and [Triggers](triggers.md).
 
 ## On the board
 
-Pass
-:   The board: the window between the kitchen and the dining room.
+Board
+:   Where a game is played: 24 points, the bar, and the shelf where borne-off
+    checkers go. Drawn as a steel kitchen pass.
 
-Order
-:   A checker on the board, drawn as an order ticket.
+Checker
+:   A playing piece, drawn as a bill with its owner and a dish written on it
+    (so it may also be called a **bill**).
 
 Point
 :   One of the 24 points of the board.
 
 Blot
-:   A point holding a single order, which can be refired.
+:   A point holding a single checker, which can be hit.
 
-Pillar
-:   Where refired orders wait before re-entering (backgammon's "bar").
-
-Refire
-:   To hit a lone enemy order: it goes to the pillar. A **refired** order is
+Hit
+:   To land on a lone enemy checker: it goes to the bar. A **hit** checker is
     one that was hit.
 
-Serve
-:   To bear off an order.
+Bar
+:   Where hit checkers wait before entering again.
 
-Plate
-:   An order that has been served (borne off). Plates stack on the pass shelf.
+Enter
+:   To bring a checker back in from the bar.
 
-Bell
-:   Ringing the service bell ends a turn.
+Bear off
+:   To take a checker off the board once all of a side's checkers are home.
+    Borne-off checkers are drawn as plates on the shelf.
+
+End turn
+:   Ends your turn; the button is drawn as a bell.
 
 ## Enemies
 
 Minion
-:   One of a biome's three regular enemies. In a service, each minion owns 5
-    of the enemy's 15 orders. See [Characters](../characters/index.md#minions).
+:   One of a biome's three regular enemies. In a regular game, each minion owns 5
+    of the enemy's 15 checkers. See [Characters](../characters/index.md#minions).
 
 Boss
-:   The enemy of a biome's close. See
+:   The enemy of a biome's boss game. See
     [Characters](../characters/index.md#bosses).
 
 Special order
-:   An enemy order with an ability of its own, drawn differently on the board.
+:   An enemy checker with an ability of its own, drawn differently on the board.
     See [How a biome works](../biomes/index.md#how-a-biome-works).
 
 Biome rule
@@ -60,49 +64,47 @@ Run
     [Run structure](run-structure.md).
 
 Day
-:   One biome: 2 services, then the close. Thursday, Friday, Saturday.
+:   One biome: 2 regular games, then the boss game. Thursday, Friday, Saturday.
 
 Biome
 :   A boss, its three minions and its biome rule. See
     [Biomes](../biomes/index.md).
 
-Service
-:   A regular game against a biome's minions.
+Regular game
+:   A game against a biome's minions, the first two of a day.
 
-Close
+Boss game
 :   A game against a biome's boss, the last game of a day.
 
 Menu
-:   The player's whole collection of orders, always 15. See
+:   The player's whole collection of checkers, always 15. See
     [Drafting & curses](drafting-and-curses.md).
 
 Menu item
-:   One kind of order the player can have on their menu.
+:   One kind of checker the player can have on their menu.
 
 Menu item choice
-:   The draft: pick 1 of 3 menu items, before the run and after each service.
+:   The draft: pick 1 of 3 menu items, before the run and after each regular game.
 
 ## Between games
 
-Tips
+Coins
 :   The in-run currency, spent in the shops. See
-    [Shops & breaks](../shops.md#tips).
+    [Shops & breaks](../shops.md#coins).
 
-Dish pit
-:   The consumables shop, run by The Elephant, visited after each service.
-    See [Shops & breaks](../shops.md#dish-pit).
+Consumable shop
+:   Run by The Elephant, visited after each regular game.
+    See [Shops & breaks](../shops.md#consumable-shop).
 
-Pockets
+Inventory
 :   Where the player keeps their consumables. No limit, copies allowed.
 
-Bar
-:   The relics shop ("shift beer"), run by The Octopus, visited before the run
-    and after each close. Not to be confused with backgammon's bar, which is
-    the [pillar](#on-the-board).
+Relic shop
+:   Run by The Octopus, visited before the run and after each boss game.
 
 Staff meal
 :   The Saint Bernard's meal at the end of each day: heals the player to full
     HP. See [Shops & breaks](../shops.md#staff-meal).
 
-Smoke break
-:   The pause menu, in the backstreet.
+Pause
+:   The pause menu.

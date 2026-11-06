@@ -23,7 +23,7 @@ run, the player makes a first
 ## Starting relic/consumables
 
 - **Relic:** none built in; the player picks a starting relic at the
-  [bar](../shops.md#bar) before the run.
+  [bar](../shops.md#relic-shop) before the run.
 - **Consumables:** none.
 
 ## Unlock
