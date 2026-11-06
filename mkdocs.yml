@@ -133,3 +133,8 @@ nav:
       - Parking lot: parking-lot.md
       - Roadmap: roadmap.md
       - Tags: tags.md
+  - Build:
+      - build/index.md
+      - Running the game: build/running.md
+      - Architecture: build/architecture.md
+      - Working with agents: build/working-with-agents.md

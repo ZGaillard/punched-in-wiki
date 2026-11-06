@@ -1,7 +1,7 @@
 ---
 name: Pufferfish
 category: minion
-status: idea
+status: implemented
 biome: shark
 summary: "Can't be hit safely unless it just moved."
 ---

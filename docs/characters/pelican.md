@@ -1,7 +1,7 @@
 ---
 name: Pelican
 category: minion
-status: idea
+status: implemented
 biome: shark
 summary: "Freezes the checkers it hits."
 ---

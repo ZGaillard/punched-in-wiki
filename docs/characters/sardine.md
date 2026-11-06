@@ -1,7 +1,7 @@
 ---
 name: Sardine
 category: minion
-status: idea
+status: implemented
 biome: shark
 summary: "Strong in a group, weak alone."
 ---
