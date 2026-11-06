@@ -20,9 +20,15 @@ The biome tied to **The Shark**. This page collects everything about the biome: 
 
 Applies in every game of the biome.
 
-- At the end of each turn, your blots drift backward by random pips: **1 on
-  day 1, 2 on day 2, 3 on day 3**, spread over the same or different blots.
+- At the end of each of **your** turns (not the enemy's), your blots drift
+  backward by random pips: **1 on day 1, 2 on day 2, 3 on day 3**, spread over
+  the same or different blots. The pips are handed out one at a time, each to
+  a random blot; a pip given to a blot that can't drift is lost.
 - Only your blots are affected, never the enemy's.
+- A drifting blot is stopped by any point the enemy occupies (1 or more
+  orders): it stops just before it. It never hits.
+- A blot stops at the edge of the pass: it never drifts past your starting
+  point.
 
 ## Boss: *The Shark*
 
@@ -72,9 +78,11 @@ Strong in a group, weak alone.
 Special orders: **2 / 3 / 4** by day.
 
 - **School speed** (special orders only): when it moves from a point shared
-  with another Sardine order (special or not), it moves 1 extra pip.
-- **Eaten alone** (all 5 Sardine orders): if you refire a Sardine that was
-  alone, it's removed from the game for good.
+  with another Sardine order (special or not), it moves 1 extra pip. The
+  extra pip is forced.
+- **Eaten alone** (all 5 Sardine orders): every Sardine you refire is removed
+  from the game for good (a refired order is always alone on its point). The
+  enemy then has one order fewer to serve.
 
 ### Placement rule
 
@@ -99,7 +107,8 @@ Special orders: **1 / 2 / 3** by day.
 - **Deflated:** if it moved during the enemy's last turn, it can be hit like
   any blot.
 - **Puffed up:** if it didn't move during the enemy's last turn, hitting it
-  sends your hitting order to the pillar too.
+  sends your hitting order to the pillar too. It's a trade: the Pufferfish
+  is refired as usual, and both go to the pillar.
 
 ### Placement rule
 
@@ -124,6 +133,9 @@ Special orders: **2 / 3 / 4** by day.
 
 - **Numbness:** when a special Pelican refires one of your orders, that order
   is caught in its pouch and frozen for 1 turn before going to the pillar.
+  While it is in the pouch, it is not on the pillar: you play your other
+  orders freely. On your next turn it lands on the pillar and must re-enter
+  first, as usual.
 
 ### Placement rule
 
