@@ -75,6 +75,8 @@ bar, and the Shark biome's
 | The player's HP reaches 0          | The run is lost. |
 
 !!! info "Current build"
-    The Godot build has enemies (the Shark's minions) and an [AI](../ai.md)
-    that plays them, but no HP yet: a lost game never ends the run. See
+    The Godot build has enemies (the Shark's minions), an [AI](../ai.md)
+    that plays them, and HP as drafted below: each enemy checker borne off costs
+    1 HP as it lands, and the run ends at 0. The staff meal heals you after each
+    boss game, with no screen yet. See
     [Build](../build/index.md).
