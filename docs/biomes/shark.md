@@ -63,7 +63,9 @@ your rarest checker on the first turn.
 
 ### Behaviour / AI notes
 
-Aggressive: fits the **Blitzer** personality.
+Aggressive: fits the **Blitzer** personality. His style is his minions',
+milder and sharper: hitting ×1.5, his own blots ×0.7 (see
+[Enemy AI](../ai.md#styles)). He will look two turns ahead.
 
 ## Minion 1: Sardine
 
@@ -148,7 +150,11 @@ Shares the minions' single AI (see [Game notes](#game-notes)).
 ## Game notes
 
 The three minions share one AI and play as a single player: one enemy turn,
-one roll. Each minion owns 5 of the enemy's 15 checkers and only provides its
+one roll. Their style, **Shark minions**, values hitting your checkers ×1.8
+and minds its own blots only half as much: they hunt your blots and leave
+their own. Each minion's special checkers bring their hints (a still
+Pufferfish is bait, Sardines stick together, a Pelican hit is worth more). See
+[Enemy AI](../ai.md). Each minion owns 5 of the enemy's 15 checkers and only provides its
 special checkers and their effects.
 
 | Day | Sardine | Pufferfish | Pelican | Regular game 1 | Regular game 2 (+ Shark) | Boss game |

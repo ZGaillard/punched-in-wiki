@@ -75,6 +75,6 @@ bar, and the Shark biome's
 | The player's HP reaches 0          | The run is lost. |
 
 !!! info "Current build"
-    The Godot build has enemies (the Shark's minions) but no HP and no AI yet:
-    both sides are played by hand, and a lost game never ends the run. See
+    The Godot build has enemies (the Shark's minions) and an [AI](../ai.md)
+    that plays them, but no HP yet: a lost game never ends the run. See
     [Build](../build/index.md).

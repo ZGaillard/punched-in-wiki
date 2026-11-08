@@ -10,7 +10,7 @@ game repository's `docs/tasks/backlog/` (named in *italics* below). See
 | # | Milestone | Goal | Status |
 |---|-----------|------|--------|
 | 1 | Foundations | One board scene, feature folders, committed tests, docs that stay true, goals as task files. | Done |
-| 2 | The AI opponent | The enemy plays itself: a full-turn search with a weighted evaluation and presets, special checkers included; who plays each side; a hint. *ai-opponent*, then *side-controllers*. | Not started |
+| 2 | The AI opponent | The enemy plays itself: a full-turn search with a weighted evaluation, a style per biome and a hint per special checker; who plays each side. See [Enemy AI](ai.md). *ai-opponent*, *side-controllers*, then *shark-boss-ai*. | In progress: the base AI and the Shark's styles and hints are built |
 | 3 | HP and losing the run | 15 HP a day, damage from borne-off enemy checkers, losing the run, the staff meal. *hp-and-damage*. | Not started |
 | 4 | Enemies | Minions and bosses with their special checkers in every biome, and their colours. *shark-boss*, *enemy-tint-by-biome*, *bill-identity-in-codes*. | In progress: the Shark's three minions are built |
 | 5 | Biome rules | One rule per biome, in every game of that biome. | In progress: Riptide (the Shark) is built |

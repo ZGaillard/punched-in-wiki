@@ -126,6 +126,7 @@ nav:
   - Systems:
       - Shops & breaks: shops.md
       - Meta progression: meta-progression.md
+      - Enemy AI: ai.md
   - Project:
       - Decisions: decisions/index.md
       - Open questions: decisions/open-questions.md
