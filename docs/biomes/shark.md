@@ -15,6 +15,9 @@ The biome tied to **The Shark**. This page collects everything about the biome: 
 - **Animals:** marine animals.
 - **Role:** the servers. Aggressive; they punish your blots.
 - **Keyword:** [hit boost](../keywords/hit-boost.md), the enemy gets a boost from hitting your checkers.
+- **Dishes:** plain checkers are burgers. Each special checker has its own
+  dish: Sardine *Sardines on toast*, Pufferfish *Fugu*, Pelican *Catch of the
+  day*, the Shark's Feeding frenzy *Surf and turf* and Shark bite *Shark sushi*.
 
 ### Biome rule: Riptide
 
