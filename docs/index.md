@@ -18,7 +18,7 @@ characters, items and the decisions behind them.
   one **biome**: two **regular games** against its three minions, then the
   **boss game** against its boss. Then comes the final boss, **The Pig**, the
   owner.
-- You have **15 HP per day**; every enemy checker that gets borne off hurts.
+- You have **30 HP per day**; every enemy checker that gets borne off hurts.
 - Between games you improve your **menu** (your 15 checkers), buy
   **consumables** at the consumable shop and **relics** at the relic shop, and eat the
   **staff meal** at the end of each day.

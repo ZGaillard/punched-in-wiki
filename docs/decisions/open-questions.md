@@ -7,7 +7,7 @@ answered, record it as a [decision](index.md) and remove it from this list.
 
 ### Exact damage values and HP { #damage-and-hp }
 
-A draft exists (15 HP per day, 1 HP per borne off enemy checker, restored by the
+A draft exists (30 HP per day, raised from 15 on 2026-11-11 after simulated runs; 1 HP per borne off enemy checker, restored by the
 staff meal). It still needs playtesting. See
 [Core rules](../rules/core-rules.md#damage-hp).
 

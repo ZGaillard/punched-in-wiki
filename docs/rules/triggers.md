@@ -8,6 +8,10 @@ same way. Words like *hit*, *bear off* and *bar* are defined in the
 !!! info "Draft"
     Every trigger here is a candidate (`status: idea`).
 
+When several effects fire at once, they resolve in a fixed order: the checker
+that moved, then the checker it hit, then your relics, then the biome rule
+([decision 0009](../decisions/0009-effects-and-triggers.md)).
+
 ## Simple triggers
 
 | Trigger | Fires when |

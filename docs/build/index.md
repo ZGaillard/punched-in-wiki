@@ -28,6 +28,9 @@ is the detailed, up-to-date list.
   behind the pass as their checkers move. The other biomes have names only.
 - **Items**: the [19 implemented consumables](../consumables/index.md) work.
   Relics are placeholders with no effect.
+- **Your menu**: the first 8 [menu items](../menu-items/index.md) work. There
+  is no drafting yet: the debug menu's Menu tab sets which ones your 15
+  checkers start with, and Burgers fill the rest.
 - **Tools**: a debug menu to start any game, position or loadout, and an F1
   panel to set up positions, dice and special checkers in a game.
 

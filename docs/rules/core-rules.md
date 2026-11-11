@@ -39,7 +39,7 @@ run, see [Run structure](run-structure.md).
     The numbers in this section are `status: idea`.
 
 - The player has HP; enemies have none.
-- The player has **15 HP per day**. HP carries over between the games of a
+- The player has **30 HP per day** (15 until 2026-11-11). HP carries over between the games of a
   day and is restored to full by the
   [staff meal](../characters/the-saint-bernard.md) at the end of each day.
 - Each enemy checker that is borne off removes **1 HP**. Some special checkers deal
