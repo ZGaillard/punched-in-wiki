@@ -9,18 +9,23 @@ is the detailed, up-to-date list.
 
 ## What is built
 
-- **Backgammon** without the doubling cube, both sides played by hand on one
-  screen (no AI yet), on the hand-drawn board. Checkers are drawn as bills
+- **Backgammon** without the doubling cube, on the hand-drawn board, against
+  the [AI](../ai.md) (or both sides by hand, or AI against AI, from the debug
+  menu). Checkers are drawn as bills
   with their owner and a dish; hover a stack to spread it, rest on a bill to
   read it.
 - **The run**: three days of two regular games and a boss game, then the final;
   coins for every checker you bear off; the consumable shop after every game
-  and the relic shop after a boss game. No HP yet, so a run can't be lost.
+  and the relic shop after a boss game. You have HP: each enemy checker borne
+  off costs some, and the run is lost at 0.
 - **Enemies**: each checker belongs to the day's minions or boss. The Shark's
   minions ([Sardine](../characters/sardine.md),
   [Pufferfish](../characters/pufferfish.md),
   [Pelican](../characters/pelican.md)) have their special checkers, and the
-  biome rule Riptide applies. The other biomes have names only.
+  biome rule Riptide applies. [The Shark](../characters/the-shark.md) has Blood
+  in the water and Feeding frenzy (Shark bite and Table stealer wait for the
+  menu), and steps into the second regular game. The enemies come out from
+  behind the pass as their checkers move. The other biomes have names only.
 - **Items**: the [19 implemented consumables](../consumables/index.md) work.
   Relics are placeholders with no effect.
 - **Tools**: a debug menu to start any game, position or loadout, and an F1

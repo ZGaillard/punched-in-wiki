@@ -68,7 +68,7 @@ your rarest checker on the first turn.
 
 Aggressive: fits the **Blitzer** personality. His style is his minions',
 milder and sharper: hitting ×1.5, his own blots ×0.7 (see
-[Enemy AI](../ai.md#styles)). He will look two turns ahead.
+[Enemy AI](../ai.md#styles)). Like his minions, he looks one turn ahead (only the Fox looks ahead).
 
 ## Minion 1: Sardine
 

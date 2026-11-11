@@ -7,7 +7,8 @@ their special checkers well is each checker's **hint**.
 !!! info "Current build"
     Built in Godot for the Shark biome: the base AI, the Shark's minion and boss
     styles, and the hints of his minions' checkers. Every enemy looks one turn
-    ahead; the bosses' sharper search comes next. The numbers are untuned.
+    ahead. The AI takes your last HP when
+    it can and bears off its costliest checkers first. The numbers are untuned.
     Code: the Godot project's `docs/reference/ai.md`.
 
 ## Goals
@@ -74,8 +75,7 @@ An effect without a hint is still obeyed. The AI just doesn't plan for it.
 
 ## Later
 
-- The bosses look two turns ahead.
-- The damage goal once HP exists: bear off the checkers that hurt most first.
-- The Fox reads your next roll (her ability, not a cheat of the AI).
+- The Fox reads your next roll (her ability, not a cheat of the AI). She is the
+  only enemy that looks ahead; a two-turn search is built for her.
 - Hints for your own menu items and relics, so the AI won't hit a checker of
   yours that punishes being hit.
