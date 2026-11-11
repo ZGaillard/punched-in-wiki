@@ -70,6 +70,16 @@ can:
 - quit or abandon the run;
 - view their current menu, relics and consumables.
 
+The pause is a step out the back of the restaurant into the alley, with no
+buttons: the scene itself is the menu. Under the hand, each piece lights up
+and says what it does.
+
+- **The restaurant's door**: back to the board.
+- **The player's raccoon**: a ticket with the run, the checkers, the relics
+  and the inventory.
+- **The street at the far end of the alley**: walk off the job, which ends
+  the run, after a confirmation.
+
 ## Coins
 
 Coins are the in-run currency, spent in the consumable shop and the relic shop.
