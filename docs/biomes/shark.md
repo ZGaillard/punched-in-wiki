@@ -185,3 +185,5 @@ special checker counts above.
 ## Design notes
 
 - The pelican stays in this biome even if a birds biome is added later.
+- On the board, the Sardines come as one school that shrinks as you eat them;
+  then the Shark comes for them ([decision 0008](../decisions/0008-enemies-behind-the-pass.md)).
